@@ -1,13 +1,6 @@
-package sudoku;
+﻿package sudoku;
 
 import ClasesAuxiliares.ConjuntoA;
-
-/**
- * @author CERVANTES OLIVARES MARÍA FERNANDA
- * @author LÓPEZ CORDERO CAROLINA CRISPINA
- * @author SÁNCHEZ AGUILAR JOSÉ DE JESÚS
- * @author SORIA MARROQUÍN GABRIELA  
- */
 
 /**
  * <pre>
