@@ -44,7 +44,6 @@ public class SoluciónSudoku {
     public boolean agregaDato(int dato, int ren, int col){
         boolean resp = false;
         if(!repetido(dato, ren, col)){
-            agregaMat(dato, ren, col);
             matriz[ren][col] = dato;
             bloques[buscaBloque(ren, col)].agrega(dato);
             renglones[ren].agrega(dato);
@@ -65,18 +64,6 @@ public class SoluciónSudoku {
         renglones[ren].quita(dato);
         columnas[col].quita(dato);
         bloques[buscaBloque(ren, col)].quita(dato);
-    }
-    
-/**
- * Método auxiliar que agrega unicamente el dato a la matriz.
- * @param dato Dato a ingresar
- * @param ren Renglón en la matriz
- * @param col Columna en la matriz
- * @return Booleano dependiendo del caso éxito/fracaso
- */    
-    public boolean agregaMat(int dato, int ren, int col){
-        this.matriz[ren][col] = dato;
-        return true;
     }
     
 /**
